@@ -5,6 +5,10 @@ import './App.css';
 
 import NavBar from './components/navbar';
 import Footer from './components/footer';
+import HomePage from './components/homepage';
+import AboutPage from './components/aboutpage';
+import ProjectsPage from './components/projectspage';
+import ContactPage from './components/contactpage';
 
 export default class App extends Component {
 	constructor(props) {
@@ -37,6 +41,21 @@ export default class App extends Component {
 			<Router>
 				<Container fluid className="p-0">
 					<NavBar />
+
+					<Switch>
+						<Route exact path="/">
+							<HomePage />
+						</Route>
+						<Route exact path="/projects">
+							<ProjectsPage />
+						</Route>
+						<Route exact path="/about">
+							<AboutPage />
+						</Route>
+						<Route exact path="/contact">
+							<ContactPage />
+						</Route>
+					</Switch>
 
 					<Footer />
 				</Container>
