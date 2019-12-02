@@ -8,13 +8,14 @@ export default class hero extends Component {
 	render() {
 		return (
 			<div
-				className="bg-transparent p-0"
+				className="bg-transparent"
 				style={{
 					border: '.01rem solid black',
 					display: 'flex',
 					justifyContent: 'center',
 					flexDirection: 'column',
 					alignItems: 'center',
+					padding: '5rem'
 					//height: '80vh'
 					//width: '100vw'
 				}}>

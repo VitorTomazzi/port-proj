@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 export default class NavBar extends Component {
 	render() {
 		return (
-			<Navbar expand="lg" className="border-bottom" style={{ backgroundColor: 'violet' }}>
+			<Navbar expand="lg" bg="dark" variant="dark" className="border-bottom">
 				<Navbar.Brand href="/">VitorCodes</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
