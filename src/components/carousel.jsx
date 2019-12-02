@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Card from './card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 export default class Carousel extends Component {
 	constructor(props) {
@@ -9,7 +12,7 @@ export default class Carousel extends Component {
 					id: 0,
 					title: 'FoodSpace',
 					subTitle: 'Social platform for aspiring home chefs',
-					imgSrc: '',
+					imgSrc: '../../public/images/foodspace.png',
 					link: 'https://foodspace-vt.herokuapp.com/',
 					selected: false
 				},
@@ -17,15 +20,15 @@ export default class Carousel extends Component {
 					id: 1,
 					title: 'Krunch',
 					subTitle: 'Mock e-commerce store for cereal enthusiasts',
-					imgSrc: '',
+					imgSrc: '../../public/images/krunch.png',
 					link: 'https://krunch-cereal-glue.herokuapp.com/',
 					selected: false
 				},
 				{
 					id: 2,
 					title: 'Tides of War',
-					subTitle: 'Chance-based board game',
-					imgSrc: '',
+					subTitle: 'Chance-based board game. Capture all of the pieces!',
+					imgSrc: '../../public/images/tidesofwar.png',
 					link: 'https://vitortomazzi.github.io/Tides-of-War/',
 					selected: false
 				}
@@ -33,7 +36,35 @@ export default class Carousel extends Component {
 		};
 	}
 
+	handleCardClick = (id, card) => {
+		let items = [ ...this.state.items ];
+
+		items[id].selected = items[id].selected ? false : true;
+
+		items.forEach((item) => {
+			if (item.id !== id) {
+				item.selected = false;
+			}
+		});
+
+		this.setState({
+			items
+		});
+	};
+
+	makeItems = (items) => {
+		return items.map((item) => {
+			return <Card item={item} onClick={(e) => this.handleCardClick(item.id, e)} key={item.id} />;
+		});
+	};
+
 	render() {
-		return <div />;
+		return (
+			<Container fluid>
+				<Row style={{ display: 'flex', justifyContent: 'space-around' }}>
+					{this.makeItems(this.state.items)}
+				</Row>
+			</Container>
+		);
 	}
 }
