@@ -5,10 +5,9 @@ import './App.css';
 
 import NavBar from './components/navbar';
 import Footer from './components/footer';
-import HomePage from './components/homepage';
-import AboutPage from './components/aboutpage';
-import ProjectsPage from './components/projectspage';
-import ContactPage from './components/contactpage';
+import HomePage from './pages/homepage';
+import AboutPage from './pages/aboutpage';
+import ContactPage from './pages/contactpage';
 
 export default class App extends Component {
 	constructor(props) {
@@ -17,15 +16,12 @@ export default class App extends Component {
 			title: 'VitorCodes',
 			headerlinks: [
 				{ title: 'Home', path: '/' },
-				{ title: 'Projects', path: '/projects' },
 				{ title: 'About', path: '/about' },
 				{ title: 'Contact', path: '/contact' }
 			],
 			home: {
-				title: 'VitorCodes'
-			},
-			projects: {
-				title: 'Latest projects'
+				title: 'VitorCodes',
+				subTitle: 'Welcome! Check out some of my projects below'
 			},
 			about: {
 				title: 'About me'
@@ -39,21 +35,18 @@ export default class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Container fluid className="p-0">
+				<Container fluid={true} className="p-0" style={{ overflow: 'hidden' }}>
 					<NavBar />
 
 					<Switch>
 						<Route exact path="/">
-							<HomePage />
-						</Route>
-						<Route exact path="/projects">
-							<ProjectsPage />
+							<HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} />
 						</Route>
 						<Route exact path="/about">
-							<AboutPage />
+							<AboutPage title={this.state.about.title} />
 						</Route>
 						<Route exact path="/contact">
-							<ContactPage />
+							<ContactPage title={this.state.contact.title} />
 						</Route>
 					</Switch>
 
