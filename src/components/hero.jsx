@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,23 +6,22 @@ import Col from 'react-bootstrap/Col';
 export default class hero extends Component {
 	render() {
 		return (
-			<div
+			<Container
 				className="bg-transparent"
+				fluid
 				style={{
-					border: '.01rem solid black',
-					display: 'flex',
-					justifyContent: 'center',
-					flexDirection: 'column',
-					alignItems: 'center',
-					padding: '5rem'
-					//height: '80vh'
-					//width: '100vw'
+					borderBottom: '.01rem solid black',
+					paddingTop: '8rem',
+					paddingBottom: '8rem'
+					//color: 'white'
 				}}>
-				<h1 className="font-weight-bold" style={{ fontSize: '4rem' }}>
-					{this.props.title}
-				</h1>
-				<h6 className="font-weight-light">{this.props.subTitle}</h6>
-			</div>
+				<Row>
+					<Col className="d-flex justify-content-center align-items-center flex-column">
+						<h1 className="bfont display-4 font-weight-bold">{this.props.title}</h1>
+						<h6 className="lfont font-weight-light">{this.props.subTitle}</h6>
+					</Col>
+				</Row>
+			</Container>
 		);
 	}
 }

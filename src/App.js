@@ -13,14 +13,14 @@ export default class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			title: 'VitorCodes',
+			title: 'vitor[codes]',
 			headerlinks: [
 				{ title: 'Home', path: '/' },
 				{ title: 'About', path: '/about' },
 				{ title: 'Contact', path: '/contact' }
 			],
 			home: {
-				title: 'VitorCodes',
+				title: 'vitor[codes]',
 				subTitle: 'Welcome! Check out some of my projects below'
 			},
 			about: {
@@ -35,7 +35,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Container fluid={true} className="p-0" style={{ overflow: 'hidden' }}>
+				<Container fluid={true} className="p-0" >
 					<NavBar />
 
 					<Switch>
@@ -56,3 +56,5 @@ export default class App extends Component {
 		);
 	}
 }
+
+//style={{ overflow: 'hidden' }}

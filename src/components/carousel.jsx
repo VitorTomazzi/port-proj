@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from './card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import foodspace from '../images/foodspace.png';
 import krunch from '../images/krunch.png';
 import tidesofwar from '../images/tidesofwar.png';
@@ -14,9 +15,11 @@ export default class Carousel extends Component {
 				{
 					id: 0,
 					title: 'FoodSpace',
-					subTitle: 'Social platform for aspiring home chefs',
+					subTitle:
+						'Social platform for aspiring home chefs. Use v/v for login/password or feel free to sign up and explore!',
 					imgSrc: foodspace,
 					link: 'https://foodspace-vt.herokuapp.com/',
+					githubLink: 'https://github.com/VitorTomazzi/foodspace',
 					selected: false
 				},
 				{
@@ -25,14 +28,17 @@ export default class Carousel extends Component {
 					subTitle: 'Mock e-commerce store for cereal enthusiasts',
 					imgSrc: krunch,
 					link: 'https://krunch-cereal-glue.herokuapp.com/',
+					githubLink: 'https://github.com/VitorTomazzi/ecommerce-server',
 					selected: false
 				},
 				{
 					id: 2,
 					title: 'Tides of War',
-					subTitle: 'Chance-based board game. Capture all of the pieces!',
+					subTitle:
+						'Chance & turn-based board game. Capture all of the opponents to win pieces! 2-player game',
 					imgSrc: tidesofwar,
 					link: 'https://vitortomazzi.github.io/Tides-of-War/',
+					githubLink: 'https://github.com/VitorTomazzi/Tides-of-War',
 					selected: false
 				}
 			]
@@ -63,9 +69,9 @@ export default class Carousel extends Component {
 
 	render() {
 		return (
-			<Container fluid>
-				<Row style={{ display: 'flex', justifyContent: 'space-around' }}>
-					{this.makeItems(this.state.items)}
+			<Container>
+				<Row>
+					<Col>{this.makeItems(this.state.items)}</Col>
 				</Row>
 			</Container>
 		);

@@ -6,7 +6,7 @@ export default class NavBar extends Component {
 	render() {
 		return (
 			<Navbar expand="lg" bg="dark" variant="dark" className="border-bottom">
-				<Navbar.Brand href="/">VitorCodes</Navbar.Brand>
+				<Navbar.Brand href="/">vitor[codes]</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="ml-auto">
