@@ -17,7 +17,9 @@ export default class hero extends Component {
 				}}>
 				<Row>
 					<Col className="d-flex justify-content-center align-items-center flex-column">
-						<h1 className="bfont display-4 font-weight-bold">{this.props.title}</h1>
+						<h1 className="bfont font-weight-bold" style={{ fontSize: '3.4rem' }}>
+							{this.props.title}
+						</h1>
 						<h6 className="lfont font-weight-light">{this.props.subTitle}</h6>
 					</Col>
 				</Row>
