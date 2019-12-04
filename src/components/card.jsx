@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import CardInfo from './cardinfo';
 
 export default class Card extends Component {
 	render() {
-		const { id, title, subTitle, imgSrc, link, selected } = this.props.item;
+		const { id, title, subTitle, imgSrc, link, githubLink, selected } = this.props.item;
 
 		return (
 			<div
@@ -29,12 +30,7 @@ export default class Card extends Component {
 						}}
 					/>
 				</a>
-				<div
-					className="d-flex justify-content-center flex-column"
-					style={{ color: 'white', textAlign: 'center' }}>
-					<h5 className="bfont">{title}</h5>
-					<h6 className="lfont">{subTitle}</h6>
-				</div>
+				<CardInfo title={title} subTitle={subTitle} link={link} githubLink={githubLink}/>
 			</div>
 		);
 	}
