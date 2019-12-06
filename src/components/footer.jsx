@@ -25,7 +25,7 @@ export default class Footer extends Component {
 				<h6
 					className="lfont"
 					style={{ display: 'flex', justifyContent: 'center', color: 'white', marginTop: '1rem' }}>
-					Built by Vitor Tomazzi
+					Brought to you from the mind of Vitor Tomazzi
 				</h6>
 			</footer>
 		);

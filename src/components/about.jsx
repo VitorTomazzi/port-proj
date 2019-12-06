@@ -21,17 +21,29 @@ export default class About extends Component {
 					alt="profile"
 					style={{ borderRadius: '50%', width: '216px', height: '200px', marginBottom: '1rem' }}
 				/>
-				<h1 className="bfont">Hi! my name is Vitor Tomazzi</h1>
+				<h1 className="bfont">Hi! My name is Vitor Tomazzi</h1>
 				<br />
 				<h3 className="lfont">A little about me:</h3>
 				<br />
 				<p className="lfont">
 					Before making the switch into the tech space, my background was in the natural sciences and in
 					business. Now I like to spend my time reading a ton of books, keeping up with the latest
-					technologies, and building web applications. On weekends, you can catch me at a concert or yelling
-					at the TV every time Marcus Rashford misses a sitter under the goal. I am always available for
-					making a lasting connection, so do not hesitate to reach out. Let's be friends! {' '}
+					technologies, and building clean web applications. On weekends, you can catch me at a concert or
+					yelling at the TV every time Marcus Rashford misses a sitter under the goal. I am always available
+					for making a lasting connection, so do not hesitate to reach out. Let's be friends! {' '}
 				</p>
+				<br />
+				<h5>Tech Stack</h5>
+				<div>
+					<i class="fab fa-html5" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-css3-alt" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-sass" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-js" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-react" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-node" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-python" style={{ fontSize: '32px' }} /> {' '}
+					<i class="fab fa-php" style={{ fontSize: '32px' }} /> {' '}
+				</div>
 			</Container>
 		);
 	}
