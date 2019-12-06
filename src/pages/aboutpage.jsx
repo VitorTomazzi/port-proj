@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import About from '../components/about';
 
 export default class AboutPage extends Component {
 	render() {
 		return (
 			<div>
-				<h1>AboutPage connected</h1>
+				<About />
 			</div>
 		);
 	}

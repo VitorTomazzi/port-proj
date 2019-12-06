@@ -35,7 +35,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Container fluid={true} className="p-0" >
+				<Container fluid={true} className="p-0" style={{ backgroundColor: '#B8C2CE' }}>
 					<NavBar />
 
 					<Switch>
