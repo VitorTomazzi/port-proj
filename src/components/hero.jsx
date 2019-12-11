@@ -13,7 +13,7 @@ export default class hero extends Component {
 					borderBottom: '.01rem solid black',
 					paddingTop: '8rem',
 					paddingBottom: '8rem'
-					//color: 'white'
+					//color: '#f8f8f8'
 				}}>
 				<Row>
 					<Col className="d-flex justify-content-center align-items-center flex-column">

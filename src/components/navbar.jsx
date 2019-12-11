@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 export default class NavBar extends Component {
 	render() {
 		return (
-			<Navbar expand="lg" bg="dark" variant="dark">
+			<Navbar className="lfont" expand="lg" bg="dark" variant="dark">
 				<Navbar.Brand href="/">vitor[codes]</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
