@@ -21,3 +21,13 @@ code {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }
+
+.success-msg {
+	color: #57a773;
+	padding: 1rem;
+}
+
+.error-msg {
+	color: #ee6352;
+	padding-left: 1rem;
+}

@@ -10,9 +10,9 @@ export default class hero extends Component {
 				className="bg-transparent"
 				fluid
 				style={{
-					borderBottom: '.01rem solid black',
-					paddingTop: '8rem',
-					paddingBottom: '8rem'
+					borderBottom: '.01rem solid #AAAAAA',
+					paddingTop: '4rem',
+					paddingBottom: '4rem'
 					//color: '#f8f8f8'
 				}}>
 				<Row>

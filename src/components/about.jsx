@@ -26,11 +26,12 @@ export default class About extends Component {
 				<h3 className="lfont">A little about me:</h3>
 				<br />
 				<p className="lfont">
-					Before making the switch into the tech space, my background was in the natural sciences and in
-					business. Now I like to spend my time reading a ton of books, keeping up with the latest
-					technologies, and building clean web applications. On weekends, you can catch me at a concert or
-					yelling at the TV every time Marcus Rashford misses a sitter under the goal. I am always available
-					for making a lasting connection, so do not hesitate to reach out. Let's be friends! {' '}
+					Before making the switch into the tech space, my background was in the biological sciences,
+					healthcare, and business. Now I like to spend my time reading a ton of books, keeping up with the
+					latest technologies, and building clean web applications. On weekends, you can catch me at a concert
+					or yelling at the TV every time Marcus Rashford misses a sitter under the goal. I am always up for
+					an adventure or available to make a lasting connection, so do not hesitate to reach out. Let's
+					connect! {' '}
 				</p>
 				<br />
 				<h5>Tech Stack</h5>
