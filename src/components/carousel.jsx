@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import foodspace from '../images/foodspace.png';
 import krunch from '../images/krunch.png';
 import tidesofwar from '../images/tidesofwar.png';
+import reactselfeval from '../images/reactselfeval.png';
 
 export default class Carousel extends Component {
 	constructor(props) {
@@ -39,6 +40,15 @@ export default class Carousel extends Component {
 					imgSrc: tidesofwar,
 					link: 'https://vitortomazzi.github.io/Tides-of-War/',
 					githubLink: 'https://github.com/VitorTomazzi/Tides-of-War',
+					selected: false
+				},
+				{
+					id: 3,
+					title: 'React Evaluation Form',
+					subTitle: 'An evaluation form build in React for junior developers to score their progress',
+					imgSrc: reactselfeval,
+					link: 'https://eval-2.herokuapp.com/',
+					githubLink: 'https://github.com/VitorTomazzi/eval-2',
 					selected: false
 				}
 			]
